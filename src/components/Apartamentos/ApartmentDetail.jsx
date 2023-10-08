@@ -22,7 +22,7 @@ const ApartmentDetail = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:3003/apartamentos/${id}`)
+        fetch(`https://final-proyect-server.onrender.com/apartamentos/${id}`)
             .then(res => res.json())
             .then(data => {
                 setInformacion(data.apartamento)
@@ -39,7 +39,7 @@ const ApartmentDetail = () => {
         const data = {}
         try {
             const response = await fetch(
-                `http://localhost:3003/apartamentos/${id}/removelike`,
+                `https://final-proyect-server.onrender.com/apartamentos/${id}/removelike`,
                 {
                     method: 'POST',
                     headers: {
@@ -63,7 +63,7 @@ const ApartmentDetail = () => {
         console.log("estoy pronado eso")
         try {
             const response = await fetch(
-                `http://localhost:3003/apartamentos/${id}/addlike`,
+                `https://final-proyect-server.onrender.com/apartamentos/${id}/addlike`,
                 {
                     method: 'POST',
                     headers: {

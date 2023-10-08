@@ -34,7 +34,7 @@ const Formulario = (props) => {
 
         try {
             const response = await fetch(
-                `http://localhost:3003/apartamentos/${props.id}/reservas`,
+                `https://final-proyect-server.onrender.com/apartamentos/${props.id}/reservas`,
                 {
                     method: 'POST',
                     headers: {

@@ -12,7 +12,7 @@ const Recomendadas = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:3003/')
+        fetch('https://final-proyect-server.onrender.com/')
             .then(res => res.json())
             .then(data => {
                 data.sort(mostLike())
